@@ -1,0 +1,2013 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    margin-top: 35px;
+    line-height: 3;
+    width: 200px;
+    color: chocolate;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+.button:hover {
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+    color: white;
+    background-color: chocolate;
+    transition: 0.1s;
+}
+
+.cart-margin {
+    margin: 0 80px;
+    padding-top: 50px;
+}
+
+.bttn.white {
+    margin-top: 5px;
+    line-height: 3;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 20px;
+}
+
+.marginTop {
+    margin: 0 0 100px 0;
+}
+
+.up-space {
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#product1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.section3 {
+    padding: 100px 80px;
+}
+
+/* ============================= HOME PAGE ================================*/
+
+#header {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 40px;                       
+    background-color: #ffa600;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; /* copied on getcssscan.com */
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+} 
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#nav-bar li {                       
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav-bar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(41, 35, 35);
+}
+
+#nav-bar li a i {
+    font-size: 20px;
+}
+
+
+#nav-bar li a:hover, 
+#nav-bar li a.active {
+    color: rgb(105, 169, 172);
+    transition: 0.05s;
+}
+
+#nav-bar li a.active::after,
+#nav-bar li a:hover::after {                    /* for navigation bar contents underline */
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: rgb(105, 169, 172);
+    position: absolute;
+    bottom: -4px;
+    left: 20px
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+#close {
+    display: none;
+}
+            
+#hero {
+    background-image: url(../imgs/herobackpic.jpg);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 70%  right 0;
+    padding: 0 80px;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+} 
+
+#hero h4 {
+    color: #000000;
+}
+
+#hero h2 i {
+    color: cadetblue;
+} 
+
+#hero p {
+    color:rgb(187, 70, 3);
+}
+#hero p span {
+    color:rgb(157, 31, 207);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ h4 {
+    padding-bottom: 15px; 
+}
+
+#hero h1 {
+    color: rgb(8, 245, 107);
+}
+
+#hero p {
+  font-family: sans-serif;
+
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#feature {
+    background-color: rgb(49, 196, 152);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+#feature .fe-box {
+    width: 14%;
+    height: 200px;
+    text-align: center;
+    min-width: 50px;
+    border: 1px solid #727775;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    align-content: center;
+    background-color: #cecaca;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    height: 23vh;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 50px;
+}
+
+#feature .fe-box h6 {  
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #1b1b1b; 
+    font-family: sans-serif;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-height: 50vh;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #a7adaa;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    position: relative;
+    margin-top: 20px;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+} 
+
+#product1 .pro img {
+    width: 100%;
+    object-fit: initial;
+    height: 35vh;
+    border-radius: 20px;
+   
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 h1 i {
+    color: rgb(32, 207, 207);
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#product1 p {
+    color: rgb(65, 111, 197);
+    font-size: 20px;
+}
+
+#product1 .pro .des span {
+    color: rgb(158, 156, 156);
+    font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+    color: rgb(199, 111, 52);
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    color: rgb(243, 181, 25);
+    font-size: 12px;
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(29, 173, 130);
+}
+
+#product1 .pro #cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(222, 239, 255);
+    color: rgb(21, 236, 236);
+    position: absolute;
+    bottom: 13px;
+    right: 20px;
+}
+
+#banner {
+    text-align: center;
+    background-image: url(../imgs/barnner/barnner1.jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#banner h4 {
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+#banner h2 {
+    color: rgb(255, 153, 1);
+    font-style: oblique;
+    font-size: 50px;
+}
+
+#banner h2 span {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 55px;
+}  
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(../imgs/barnner/barnner2.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+#sm-banner .banner-box2 {
+    background-image: url(../imgs/barnner/barnner3.jpg);
+}
+
+#sm-banner h4{
+    color: rgb(215, 13, 233);
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0;
+}
+
+#sm-banner h2 {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    padding: 0;
+}
+
+#sm-banner span {
+    color: rgb(255, 255, 255);
+    font-size: 30px sans-serif;
+    padding-bottom: 15px;
+}
+#sm-banner span span {
+    color: rgb(0, 255, 255);
+    font-size: 30px sans-serif;
+    font-weight: 700;
+    padding: 0;
+} 
+
+#sm-banner .banner-box:hover button {
+    background-color: rgb(236, 73, 19);
+    transition: 0.02s ease;
+}  
+
+#banner3 {
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(../imgs/clothes/pic11.jpg);
+    min-width: 18%;
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+}
+#banner3 .banner2 {
+    background-image: url(../imgs/j-kicks/pic2.jpg);
+}
+#banner3 .banner3 {
+    background-image: url(../imgs/j-kicks/pic3.jpeg);
+}
+
+#banner3 h2 {
+    color: #000000;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3 {
+    color: #193a36;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#news-letter {
+    background-image: url(../imgs/newsletter.jpg);
+    height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#news-letter .news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px;
+}
+
+#news-letter .news div h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#news-letter .news div h5 {
+    color: #20d1dd;
+    font-size: 16px;
+    font-weight: 300;
+}
+#news-letter .news div h5 span  {
+    color: #ffee00;
+}
+
+#news-letter .form  {
+    display: flex;
+    width: 40%;
+}
+   
+#news-letter .form input   {
+    border: 1px solid transparent;
+    height: 3.125rem;
+    font-size: 14px;
+    padding: 0 1.25em;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+} 
+
+#news-letter .form button {
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+    background-color: rgb(46, 216, 228);
+    transition: 0.1s;
+    margin-top: 0;
+    width: 35%;
+    line-height: 2;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#news-letter .form button:hover {
+    color: rgb(71, 212, 223);
+    background-color: #2f7cd3;
+} 
+
+#footer {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 5px;
+}
+#footer .footer-txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer .footer-txt .footer1 h3 {
+    padding-bottom: 19px;
+}
+
+#footer .footer-txt .footer1 h5 {
+    font-weight: 900;
+    padding-bottom: 7px;
+}
+
+#footer .footer-txt .footer1 h5 span,
+.footer2 {
+    color: #494646;
+    padding-bottom: 5px;
+    font-weight: lighter;
+}
+
+.footer3 {
+    padding-bottom: 19px;
+    padding-top: 25px;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+#footer a {
+    color: #494646;
+}
+
+#footerIcons i {
+    font-size: 30px;
+}
+
+/*======================================= SHOP PAGE ============================================*/
+
+#pagination {
+    text-align: center;
+    margin: 50px 80px 100px 80px;
+}
+
+#pagination a {
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 12px;
+}
+
+/*============== single Product PAGE ================*/
+
+#prodetails {
+    margin: 50px 80px;
+    display: flex;
+}
+
+#prodetails .single-pro-img {
+    width: 20%;
+    margin-right: 50px;
+}
+
+#prodetails .small-img-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-detils {
+    width: 50%;
+}
+
+#prodetails .single-pro-detils h6 {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#prodetails .single-pro-detils h3 {
+    font-size: 16px;
+    color: #727775;
+    padding: 30px 0px;
+}
+
+#prodetails .single-pro-detils h2 {
+    font-size: 18px;
+}
+
+#prodetails .single-pro-detils select {
+    display: block;
+    color: #000000;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 5px;
+    border: 1px solid #727775;
+    border-radius: none;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-detils input {
+    padding: 5px;
+    outline: none;
+    width: 60px;
+}
+
+#prodetails .single-pro-detils button {
+    padding: 5px;
+    width: 100px;
+    color: #fff;
+    background-color: #0f7279;
+    border-radius: none;
+    border: none;
+}
+
+#prodetails .single-pro-detils h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1bbac5;
+    padding-top: 20px;
+}
+
+#prodetails .single-pro-detils span {
+    line-height: 25px;
+}
+
+/*==============================================BLOG PAGE ============================================*/
+#head.blogHeader {
+    background-image: url(../imgs/blog/background.jpg);
+}
+
+#blogPosts {
+    padding: 100px 150px 0 150px;
+}
+
+#blogPosts .blogBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blogPosts .blogImg {
+    width: 50%;
+}
+
+#blogPosts img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blogPosts .blogDetails {
+    width: 50%;
+    padding-left: 50px;
+    
+    justify-content: center;
+}
+
+#blogPosts .blogDetails a {
+    color: #000000;
+    font-weight: 700;
+    font-size: 11px;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blogPosts .blogDetails a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background-color: #000000;
+    top: 4px;
+    right: -60px;
+}
+
+#blogPosts .blogDetails a:hover {
+    color: #1bbac5;
+}
+
+#blogPosts .blogDetails a:hover::after {
+    background-color: #1bbac5;
+}
+
+#blogPosts .blogBox h1 {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    font-size: 80px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -1;
+}
+
+/*============================================= ABOUT PAGE ===========================================*/
+#head {
+    background-image: url(../imgs/aboutHeadbckpic.jpg);
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 57% right 0;
+    background-size: cover;
+    text-align: center;
+}
+
+#head .contents h2 {
+    color: #fff;
+    font-size: 50px;
+    padding-top:50px;
+}
+
+#head .contents h2 span {
+    font-weight: 800;
+}
+
+#head .contents h5 {
+    color: #e6e1e1;
+    font-size: 18px;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about-head div h1 {
+    font-size: 50px;
+}
+
+#dowmload {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#dowmload h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+}   
+
+#dowmload h1 span {
+    color: #7c1ed4;
+    text-decoration: underline
+}
+
+#dowmload div video {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/*========================================= CONTACT PAGE ============================================================*/
+#contact-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#contact-us .contact-us-1 {
+    width: 40%;
+}
+
+#contact-us .contact-us-1 span,
+#contact-form .leave-message span {
+    color: #727775;
+    font-size: 16px;
+}
+
+#contact-us .contact-us-1 h3 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+#contact-us .contact-us-1 h5 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-us .contact-us-1 div li {
+    padding-bottom: 20px;
+}
+
+#contact-us .contact-us-1 div li {
+    list-style: none;
+    display: flex;
+}
+
+#contact-us .contact-us-1 div li i {
+    font-size: 14px;
+    color: #424040;
+    padding-right: 30px;
+}
+
+#contact-us .contact-us-1 div li p {
+    font-size: 14px;
+    color: #727775;
+}
+
+#contact-us .map {
+    width: 55%;
+    height: 400px;
+    border-radius: 6px;
+    cursor: grab;
+}
+
+#contact-us .map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #e9eceb;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 100px;
+    margin: 15px 35px;
+}
+
+#contact-form .leave-message h1 {
+    padding-bottom: 20px;
+}
+
+#contact-form .leave-message {
+    width: 60%;
+}
+
+#contact-form .leave-message h1 {
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+#contact-form .leave-message form {
+    display: flex;
+    flex-direction: column;
+} 
+
+#contact-form .leave-message form input,
+#contact-form .leave-message form textarea {
+    width: 100%;
+    padding: 15px 13px;
+    color: #727775;
+    border: 1px solid #d0d4d3;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+#contact-form .leave-message form textarea {
+    height: 20vh;
+}
+
+#contact-form .leave-message form button {
+    width: 20%;
+    height: 50px;
+    margin-top: 7px;
+    padding: 10px 0;
+    color: #1bbac5;
+    font-size: 20px;
+    border-radius: 0px;
+    border: none;
+    background-color: rgb(157, 241, 234);
+}
+#contact-form .leave-message form button:hover {
+    color: #fff;
+    background-color: rgb(98, 208, 241);
+}
+
+#contact-form .campany-employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30%;
+} 
+
+#contact-form .campany-employees img {
+    width: 30%;
+    height: 50px;
+    border-radius: 100px;
+}
+
+#contact-form .campany-employees h4 {
+    color: #1b1b1b;
+}
+
+#contact-form .campany-employees p a {
+    color: #646161;
+    line-height: 2;
+}
+
+#contact-form .campany-employees div p {
+    color: #646161;
+}
+
+/* CART PAGE */
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#cart table thead {
+    border: 1px solid #e6e1e1;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: none;
+    border-left: none;
+}
+
+#cart table thead tr td {
+    padding: 10px;
+}
+
+#cart table tbody tr td {
+    text-align: center;
+    color: #727775;
+}
+
+#cart table tbody tr {
+    font-size: 13px;
+}
+
+#cart table tbody tr td input {
+    width: 60px;
+    border: 1px solid #dde4e0;
+    padding: 5px;
+    border-radius: 3px;
+    color: #727775;
+}
+
+#apply-coupon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}  
+
+#apply-coupon .coupon {
+    width: 60%;
+}
+
+#apply-coupon .coupon h2,
+#apply-coupon .cart-tools h2 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#apply-coupon .coupon input {
+    width: 60%;
+    padding: 5px 10px;
+    color: #727775;
+    font-size: 17px;
+    border: 1px solid #dde4e0;
+    outline: none;
+}
+
+#apply-coupon .coupon button,
+#apply-coupon .cart-tools button {
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 6px 8px;
+    margin-left: 5px;
+    background-color: #20d1dd;
+}
+
+#apply-coupon .cart-tools button {
+    width: 45%;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+#apply-coupon .coupon button:hover,
+#apply-coupon .cart-tools button:hover {
+    background-color: #00ffc8;
+}
+
+#apply-coupon .cart-tools {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid #f3f0f0;
+    padding: 30px;
+}
+
+#apply-coupon .cart-tools table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#apply-coupon .cart-tools table td {
+    color: #a7adaa;
+    padding: 5px 5px;
+    border: 1px solid #d0d4d3;
+}
+
+#apply-coupon .cart-tools table td span {
+    color: #000000;
+    border-bottom: none;
+}
+
+/*=======================================SIGN-UP PAGE======================================================*/
+#signUpForm {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    height: 110vh;
+    border: 1px solid #cecaca;
+    border-radius: 50px;
+    margin: 40px 350px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);
+    background-color: rgb(243, 247, 247);
+}
+
+#signUpForm .signUpContents {
+    width: 100%;
+    padding: 40px 60px;
+}
+
+#signUpForm h1 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif,'Courier New', Courier, monospace;
+} 
+
+#signName,
+#signEmail,
+#password {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0;
+    width: 100%; 
+}
+
+#input {                                
+    width: 100%;
+    min-width: 400px;
+    padding: 20px;
+    outline: none;
+    border: 1px solid #d0d4d3;
+    font-size: 16px;
+}
+
+#tooglePassword {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 14px;
+   padding: 0;
+   width: 100%; 
+   color: #727775;
+   padding: 5px 0 0 0;
+}
+
+#tooglePassword input {
+    width: 20px;
+    min-width: 10px;
+}
+
+#signUpForm form .signUpFormButton {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    background-color: #ffa600;
+    cursor: pointer;
+}
+
+#signUpForm form .signUpFormButton:hover {
+    background-color: #d19017;
+}
+
+#signUpForm form .orOtherSignIn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#signUpForm form .orOtherSignIn hr {
+    width: 40%;
+    border: 1px solid #d7ddd9;
+    margin: 30px 0;
+}
+
+#signUpForm form .orOtherSignIn span {
+    margin: 30px 0;
+    font-size: 15px;
+}
+
+#formIcons {
+    width: 100%;
+}
+
+#formIcons .signUpFormOtherButton1,
+#formIcons .signUpFormOtherButton2 {
+    font-size: 17px;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+}
+
+#formIcons .signUpFormOtherButton1 {
+    background-color: #1877F2;
+    margin-bottom: 20px;
+}
+
+#formIcons .signUpFormOtherButton1 i {
+    color: #fff;
+}
+
+#formIcons .signUpFormOtherButton1:hover {
+    background-color: #346bb3;
+}
+
+#formIcons .signUpFormOtherButton2 {
+    background-color: #fff;
+    border: 1px solid #c9cbce;
+}
+
+#formIcons .signUpFormOtherButton2:hover {
+    background-color: #e4dede;
+}
+
+#formIcons button i {
+    font-size: 20px;
+}
+
+/*============================================================= AT MEDIA =============================================================*/
+
+@media (max-width: 1100px) {
+/*================ HOME PAGE =====================*/
+    .section3 {
+        padding: 70px 20px;
+    }
+
+    #hero {
+       
+        height: 70vh;
+        background-position: top 70% right 0;
+        padding: 0 50px;
+        font-size: 32px;
+    }  
+
+    #feature {
+        height: 34vh;
+    }
+
+    #feature .fe-box {
+        width: 12%;
+        height: 143px;
+    }
+
+    #feature .fe-box img {
+        height: 17vh;
+        border-bottom-right-radius: 5px;
+    }
+
+    #feature .fe-box h6 {
+        margin-top: 3px;
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    #product1 h1 i {
+        font-size: 60px;
+    } 
+
+    #product1 .pro {
+        width: 20%;
+        min-height: 40vh;
+        min-width: 100px;
+        height: 55vh;
+        margin: 10px;
+    }
+
+    #product1 .pro img {
+        height: 26vh;
+    }
+
+    #banner h2 {
+        font-size: 45px;
+    }
+
+    #banner h2 span {
+        font-size: 50px;
+    }
+
+    .button {
+        margin-top: 30px;
+        
+    }
+
+    .up-space {
+        margin-top: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #sm-banner .banner-box {
+        width: 100%;
+        height: 90vh;
+        margin-bottom: 15px;
+    }
+
+    #banner3 {
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 70px;
+    }
+
+    #banner3 .banner-box {
+        min-width: 10%;
+        height: 50vh;
+    }
+
+    #news-letter {
+        height: 40vh;
+    }
+
+    #news-letter .form {
+        width: 50%;
+    }
+  
+    /*================================= CONTACT PAGE ====================================================*/
+
+    #contact-form {
+        padding: 50px;
+    }
+
+    #signUpForm {
+        height: 120vh;
+        margin: 40px 260px;
+        padding: 40px 20px;
+    }
+
+    #signUpForm .signUpContents {
+        padding: 20px 30px;
+    }
+
+    #signName, #signEmail, #password {
+        padding: 15px 0;
+    } 
+    
+    #signUpForm form .orOtherSignIn hr {
+        width: 40%;
+        border: 1px solid #d7ddd9;
+        margin: 20px 0 10px 0;
+    }
+
+}
+    
+
+@media (max-width: 799px) {
+/*============== HOME PAGE ===================*/
+    .section3 {
+        padding: 40px 40px;
+    }
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgb(255, 169, 30);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #nav-bar.Active {
+        right: 0px;
+    }
+
+    #nav-bar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        color: #222;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 50vh;
+    }
+
+    #feature {
+        justify-content: center;
+        height: 70vh;
+    }
+
+    #feature .fe-box {
+        margin: 20px ;
+        min-width: 25px;
+        width: 160px;
+        height: 150px;
+        align-items: center;
+    }
+
+    #feature .fe-box img {
+        height: 70%;
+    }
+
+    #product1 h1 i {
+        font-size: 50px;
+    }
+
+    #product1 p {
+        font-size: 17px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 10px;
+        width: 30%;
+    }
+
+    #product1 .pro img {
+        height: 31vh;
+    }
+
+    #banner {
+        height: 35vh;
+    }
+
+    #banner h4 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    #banner h2 span {
+        font-size: 45px;
+    }
+
+    #banner h2 {
+        font-size: 40px;
+    }
+
+    .button {
+        margin-top: 6px;
+        line-height: 2;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .marginTop {
+        margin: 0 0 50px 0;
+    }
+
+    #sm-banner {
+        margin-bottom: 0;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 70vh;
+        margin-bottom: 20px;
+    }
+
+    .up-space {
+        margin-top: 60px;
+    }  
+
+    #banner3 {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    #banner3 .banner-box {
+        width: 32%;
+        height: 45vh;
+        margin-top: 10px;
+    }
+
+    #banner3 h2 {
+        font-size: 20px;
+    }
+
+    #news-letter {
+        height: 30vh;
+        padding: 5px;
+    }
+
+    #news-letter .form {
+        width: 70%;
+        margin-top: 7px;
+    }
+
+    #news-letter .news {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    #footer {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    /*=================== ABOUT PAGE=========================*/
+
+    #about-head {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top: 30px;
+    }
+
+    #dowmload div video {
+        width: 90%;
+    }
+
+    /*======================== CART PAGE =====================*/
+
+    #cart {
+        overflow-x: auto;
+    }
+
+    #apply-coupon .coupon {
+        width: 50%;
+    }
+
+    #apply-coupon .coupon input {
+        width: 70%;
+    }
+
+    #apply-coupon .cart-tools {
+        width: 50%;
+    }
+
+    #apply-coupon .cart-tools button {
+        width: 60%;
+    }
+
+    /*=========================SIGN-UP PAGE ===========================*/
+
+#signUpForm {
+	margin: 40px 150px;
+}
+
+}
+
+@media (max-width: 477px)  {
+    /*========================= HOME PAGE =================================*/
+    #header {
+        padding: 10px 10px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+        height: 40vh;
+    }
+
+    h4 {
+        padding-bottom: 5px;
+    }
+
+    #hero {
+        font-size: 25px;
+    }
+
+    #feature {
+        height: 90vh;
+        justify-content: space-around;
+    }
+
+    #feature .fe-box {
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 35%;
+        height: 150px;
+        
+    }
+
+    #feature .fe-box img {
+        height: 70%;
+        width: 100%;
+    }
+
+    #feature .fe-box h6 {
+        padding: 3px 4px 3px 4px;
+    }
+
+    .section3 {
+        padding: 10px 10px;
+    }
+
+    #product1 h1 i {
+        font-size: 35px;
+    }
+
+    #product1 p {
+        font-size: 16px;
+    }
+
+    #product1 .pro-container {
+        justify-content: flex-start;
+    }
+
+    #product1 .pro {
+        width: 45%;
+        height: 60vh;
+        min-width: 100px;
+        padding: 5px 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #product1 .pro img {
+        height: 65%;
+        border-radius: 10px;
+    }
+    #product1 .pro .des {
+        text-align: start;
+        padding: 5px 0;
+    }
+
+    #product1 .pro #cart {
+        bottom: 6px;
+        right: 10px;
+    }
+
+    #banner {
+        height: 25vh;
+    }
+
+    #banner h4 {
+        font-size: 17px;
+        padding-top: 5px;
+    }
+
+    #banner h2 {
+        font-size: 30px;
+    }
+
+    #banner h2 span {
+        font-size: 35px;
+    }
+
+    .button {
+        margin-top: 3px;
+        font-size: 15px;
+    }
+
+    .up-space {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 45vh;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    #sm-banner h2 {
+        font-size: 30px;
+    }
+
+    .bttn.white {
+        margin-top: 0px;
+        line-height: 2;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    #banner3 {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+        height: 35vh;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    #banner3 h2 {
+        font-size: 20px;
+    }
+
+    #news-letter {
+        padding: 3px;
+    }
+
+    #news-letter .news {
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    #news-letter .form {
+        width: 100%;
+    }
+
+    #footer .copyright {
+        margin-top: 15px;
+    }
+
+    /*================ ABOUT PAGE ========================*/
+    #head {
+        height: 30vh;
+    }
+
+    #head .contents h2 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+
+    #head .contents h5 {
+        font-size: 16px;
+    }
+
+    
+
+    #about-head div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #about-head div h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #about-head img {
+        height: 45vh;
+        width: 100%;
+    }
+
+    #dowmload h1 {
+        padding-bottom: 10px;
+    }
+
+    #dowmload div video {
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /*============================ CONTACT PAGE ====================================*/
+
+    #contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #contact-us .contact-us-1 {
+        width: 100%;
+    }
+
+    #contact-us .map {
+        width: 100%;
+        height: 400px;
+    }
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    #contact-form .leave-message {
+        width: 100%;
+    }
+
+    #contact-form .leave-message form textarea {
+        height: 10vh;
+    }
+
+    #contact-form .leave-message form button {
+        width: 40%;
+        margin: 7px 0;
+        
+    }
+
+    #contact-form .campany-employees {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 60px;
+    }
+    #contact-form .campany-employees img {
+        width: 30%;
+        height: 70px;
+        padding-top: 20px;
+    }
+
+    #contact-form .campany-employees h4 {
+        padding-top: 20px;
+    }
+
+    #contact-form .campany-employees div p:nth-child(3) a {
+        padding-bottom: 10px;
+    }
+
+    /*========================= CART PAGE =================================*/
+
+    #cart {
+        overflow-x: auto;
+    }
+
+    .cart-margin {
+        margin: 0 20px;
+        padding-top: 30px;
+    }
+
+    #apply-coupon {
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    #apply-coupon .coupon {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #apply-coupon .cart-tools {
+        width: 100%;
+    }
+
+    #apply-coupon .cart-tools button {
+        width: 50%;
+    }
+
+    /*==============================SIGN-UP PAGE =============================*/
+    #signUpForm {
+        margin: 30px 50px;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
+        padding: 20px 0;
+        height: 100vh;
+    }
+
+    #signUpForm .signUpContents {
+        padding: 20px 25px;
+    }
+
+    #signName, #signEmail, #password {
+        padding: 5px 0;
+    }
+
+    #input {
+        min-width: 100px;
+        padding: 14px;
+    }
+
+    #tooglePassword {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 377px) {
+    /*=================== SIGN-UP PAGE ==========================*/
+    #signUpForm {
+        margin: 20px 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        padding: 10px 0;
+    }
+
+    #formIcons .signUpFormOtherButton1, #formIcons .signUpFormOtherButton2 {
+        padding: 15px 5px;
+    }
+
+    #signUpForm form .orOtherSignIn hr {
+        margin: 10px 0 6px 0;
+    }
+}
+
+
+
+@media (max-width: 302px) {
+    #nav-bar {
+        width: 150px;
+    }
+
+    #header {
+        padding: 5px 5px;
+    }
+
+    #hero {
+        font-size: 23px;
+    }
+
+    #hero {
+        padding: 0 10px;
+        background-position: 80%;
+        height: 30vh;
+    }
+
+    .button {
+        width: 100px;
+    }
+
+    #feature {
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        border: 130px;
+    }    
+
+    #feature .fe-box {
+        margin: 10px 5px;
+        width: 130px;
+        height: 100px;
+        margin-top: 35px;
+    }
+
+    #feature .fe-box img {
+        height: 15vh;
+        width: 130px;
+    }
+
+    .section3 {
+        padding-top: 5px;
+    }
+
+    #product1 h1 i {
+        font-size: 30px;
+    }
+
+    #product1 .pro-container {
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    #product1 .pro {
+        margin: 0px;
+        width: 100%;
+        height: 36vh;
+        margin-top: 10px;
+    }
+
+    #product1 .pro img {
+        height: 65%;
+    }
+
+    #product1 .pro .des h5 {
+        padding-top: 3px;
+        font-size: 13px;
+    }
+
+    #product1 .pro #cart {
+        bottom: 4px;
+        right: 5px;
+    }
+
+    #banner {
+        height: 21vh;
+    }
+
+    .button {
+        margin-top: 5px;
+        width: 150px;
+    }
+
+    .marginTop {
+        margin: 0 0 30px 0;
+    }
+
+    #news-letter {
+        height: 17vh;
+        padding: 3px;
+    }
+
+    #news-letter .news {
+        padding: 5px;
+        margin-top: 0px;
+    }
+
+    #news-letter .news div h1 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    #news-letter .news div h5 {
+        font-size: 15px;
+        font-weight: 200;
+    }
+    /* CART PAGE*/
+
+    #cart {
+        overflow-x: auto;
+    }
+
+    .up-space {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #apply-coupon .cart-tools {
+        padding: 20px 15px;
+    }
+
+    #apply-coupon .coupon h2,
+    #apply-coupon .cart-tools h2 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    #apply-coupon .cart-tools button {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
